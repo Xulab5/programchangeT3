@@ -1,0 +1,107 @@
+<!--
+**** NAME: Steven Sub
+**** SECTION:
+**** 25/11/19
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link href="index_t3.css" rel="stylesheet" type="text/css" />
+
+<title>UB Change of Program Form</title>
+</head>
+<body>
+	<h1>Change of Program</h1>
+	<h2>Fill out the form to apply for a program change</h2>
+	
+<!--START FORM HERE-->
+	<form onsubmit=" return validate()" method="post" >		
+		<!--START OF MAIN TABLE-->
+		<table>
+			<tr class ="rowColor"> <!--ROW 1-->
+				<th>Program Change Reason:</th>
+				<td><!--Fill in Select options here-->
+					<select name="reason">
+						<option value="wimp">I am a wimp</option>
+						<option value="aswesome">My teacher is too awesome</option>
+						<option value="misinformed">It is not Facebook</option>						
+					</select>
+
+					
+				</td>
+			</tr> <!--END ROW 1-->
+			
+			<tr> <!--ROW 2-->
+				<th>Student Type:</th>
+				<td><input type="radio" name="studenttype" checked >Full time <input type="radio" name="studenttype"> Part-time</td>
+			</tr> <!--END ROW 2-->
+			
+			<tr> <!--ROW 3-->
+				<th>Challenging Subjects:</th>
+				<td><input type="checkbox" name="challenging[]" checked>Networking</td>
+			</tr> <!--END ROW 3-->
+			
+			<tr> <!--ROW 4 - DOUBLE NESTED TABLE WILL GO HERE-->
+				<th>Student Information:</th>
+				<td>	<table id="info">
+				
+				<tr><!--start of row1-->
+				
+				<td>name:</td><!--end col1-->
+				<td><input type="text" id="studentName" name="name" ></td><!--end col2-->
+				
+				</tr><!--end of row1 -->
+				
+				<tr><!--start of row2-->
+				<td>ID:</td><!--end col1-->
+				<td><input type="text" name="id"></td><!--end col2-->
+				</tr><!--end of row2 -->
+				
+				<tr><!--start of row3-->
+				<td>Date of Birth:</td><!--end col1-->
+				<td>
+					<table id="bob">
+					<tr id ="datestring" colspan="3">
+						<td>Day/</td>
+						<td>Month/</td>
+						<td>year</td>
+					</tr><!--end ofrow1-->
+					<tr>
+					<td><input type="text" name="day" size="2" maxlength="2"></td>
+					<td><input type="text" name="month"size="2" maxlength="2"></td>
+					<td><input type="text" name="year" size="2"></td>
+					</tr><!--end of row2-->
+						
+					</table>
+				</td><!--end col2-->
+				</tr><!--end of row3-->
+				
+				</table>	</td>
+			</tr> <!--END ROW 4-->
+			
+			<tr> <!--ROW 5-->
+				<th>Student Comments:</th>
+				<td><textarea name="comment" id ="comment"rows="10" cols="48"></textarea></td>
+			</tr> <!--END ROW 5-->
+			
+			<tr> <!--ROW 6-->
+				
+				<th><input type="submit" value="Apply" ></th> <!--EMPTY CELL NEXT TO BUTTON-->
+			</tr> <!--END ROW 6-->
+			
+		</table><!--END OF MAIN TABLE-->
+	</form>	
+	<footer>
+			Steven Sub &copy 2019-All Rights Reserved
+	</footer>
+	
+	<div id="error"></div>
+<!--END OF FORM HERE-->
+	 <script src="code.js">
+	 
+	 </script>
+</body> <!--END OF BODY-->
+</html> <!--END OF HTML PAGE-->

@@ -1,0 +1,38 @@
+body{
+	background-color: #efe5d0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	margin: 20px;
+}
+
+table{
+	border:	10px dotted #7e7e7e;
+	border-width:	thin;
+}
+
+th{
+	text-align:	right;
+	vertical-align:	top;
+	padding-right:	10px;
+	padding-top:	2px;
+}
+
+td{
+	border-spacing:	1;
+	padding:		0;
+}
+footer{
+	font-size: small;	
+}
+
+#datestring{
+	text-align: center;
+}
+.rowColor
+{
+	background-color: gray;
+}
+
+#bob, #info{
+	text-align: right;
+	padding-bottom: 0px;
+}
